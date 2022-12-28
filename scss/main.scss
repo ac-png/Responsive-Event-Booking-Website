@@ -1,10 +1,57 @@
-// Importing Roboto Font
+// Import Functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Globals
+$enable-negative-margins: true;
+
+// Theme Colors
+$primary: rgb(94, 21, 253);
+$secondary: rgb(16, 1, 49);
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+  6: $spacer * 6,
+);
+
+// Radius
+$border-radius:               .5rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .5rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
+
+// Import Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+// Font
 $font-family-base: "Roboto";
 
-// Import Bootstrap Icons
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+// Import Variables + Mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom Colors
+$custom-colors: (
+    "contrast": rgb(255, 187, 0),
+);
+
+// Merge our colors with the theme
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-remove(
+    $theme-colors,
+    "danger",
+    "success",
+    "warning",
+    "info"
+);
 
 // Import Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
