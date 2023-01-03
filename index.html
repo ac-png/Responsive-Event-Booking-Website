@@ -59,12 +59,26 @@
 					</ul>
 					<form class="d-flex" role="search">
 						<input
-							class="form-control me-2"
+							class="form-control me-2 bg-dark border-light"
 							type="search"
 							placeholder="Search"
 							aria-label="Search"
 						/>
 					</form>
+					<ul class="list-inline text-light fs-5 d-flex align-items-center">
+						<li class="list-inline-item">
+							<i class="bi bi-bell"></i>
+						</li>
+						<li class="list-inline-item">
+							<i class="bi bi-question-circle"></i>
+						</li>
+						<li class="list-inline-item">
+							<i class="bi bi-gear"></i>
+						</li>
+						<li class="list-inline-item fs-3">
+							<i class="bi bi-person-circle"></i>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -114,12 +128,14 @@
 					<div class="input-group mb-3 my-3">
 						<input
 							type="text"
-							class="form-control"
+							class="form-control rounded-4 me-2"
 							placeholder="Search by artist, team, event or venue"
 							aria-label="Search by artist, team, event or venue"
 							aria-describedby="basic-addon1"
 						/>
-						<button type="button" class="btn btn-primary">Search</button>
+						<a href="#" class="btn btn-primary rounded-circle"
+							><i class="bi bi-search"></i
+						></a>
 					</div>
 				</div>
 				<div class="p-4 col-6">
@@ -132,7 +148,7 @@
 				<div class="p-4 col">
 					<h1 class="fw-semibold">Give Friends $10. Get $10.</h1>
 					<h5 class="fw-light">Refer a friend and you'll save even more.</h5>
-					<button type="button" class="btn btn-primary">Refer a Friend</button>
+					<a href="#" class="p-3 rounded-5 btn btn-primary">Refer a Friend</a>
 				</div>
 			</div>
 		</div>
@@ -140,11 +156,18 @@
 			<h2>Top Events</h2>
 			<div class="col-md-4 col-sm-6 my-1">
 				<div class="card">
-					<img src="images/westlife.png" class="card-img-top" alt="..." />
+					<img
+						src="images/image.png"
+						class="card-img-top"
+						style="height: 11rem"
+						alt="..."
+					/>
 					<div class="card-body">
 						<h5 class="card-title">Westlife - The Wild Dreams Tour</h5>
 						<p class="card-text">Aviva Stadium - July 8, 2022</p>
-						<a href="#" class="btn btn-primary text-light fw-semibold"
+						<a
+							href="westlife.html"
+							class="btn btn-primary text-light fw-semibold"
 							>View Tickets</a
 						>
 					</div>
@@ -152,7 +175,12 @@
 			</div>
 			<div class="col-md-4 col-sm-6 my-1">
 				<div class="card">
-					<img src="images/robbie.png" class="card-img-top" alt="..." />
+					<img
+						src="images/image.png"
+						class="card-img-top"
+						style="height: 11rem"
+						alt="..."
+					/>
 					<div class="card-body">
 						<h5 class="card-title">Robbie Williams - XXV TOUR</h5>
 						<p class="card-text">3Arena - November 2, 2022</p>
@@ -164,7 +192,12 @@
 			</div>
 			<div class="col-md-4 col-sm-6 my-1">
 				<div class="card">
-					<img src="images/image.png" class="card-img-top" alt="..." />
+					<img
+						src="images/image.png"
+						class="card-img-top"
+						style="height: 11rem"
+						alt="..."
+					/>
 					<div class="card-body">
 						<h5 class="card-title">Sting</h5>
 						<p class="card-text">Malahide Castle - June 28, 2023</p>
@@ -191,18 +224,18 @@
 		<div class="row mx-5 py-5">
 			<h2>Top Deals</h2>
 			<div class="col-md-3 col-sm-4 my-1">
-				<div class="card">
-					<img src="images/image.png" class="card-img-top" alt="..." />
+				<div class="card" style="height: 11rem">
+					<i class="bi bi-egg-fried fs-1 text-center mt-3"></i>
 					<div class="card-body">
 						<h5 class="card-title text-center m-2 fw-bold">
-							20% off Domino’s Pizza
+							20% off Breakfast at Kay's Kitchen
 						</h5>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-4 my-1">
-				<div class="card">
-					<img src="images/image.png" class="card-img-top" alt="..." />
+				<div class="card" style="height: 11rem">
+					<i class="bi bi-cup-straw fs-1 text-center mt-3"></i>
 					<div class="card-body">
 						<h5 class="card-title text-center m-2 fw-bold">
 							1 free drink or food item
@@ -211,8 +244,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-4 my-1">
-				<div class="card">
-					<img src="images/image.png" class="card-img-top" alt="..." />
+				<div class="card" style="height: 11rem">
+					<i class="bi bi-tv fs-1 text-center mt-3"></i>
 					<div class="card-body">
 						<h5 class="card-title text-center m-2 fw-bold">
 							30-day trial of EventSaver Pro
@@ -221,8 +254,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-4 my-1">
-				<div class="card">
-					<img src="images/image.png" class="card-img-top" alt="..." />
+				<div class="card" style="height: 11rem">
+					<i class="bi bi-ticket-perforated fs-1 text-center mt-3"></i>
 					<div class="card-body">
 						<h5 class="card-title text-center m-2 fw-bold">
 							20% off Selected Tickets

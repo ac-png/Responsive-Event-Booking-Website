@@ -38,6 +38,8 @@ $font-family-base: "Roboto";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
 // Custom Colors
 $custom-colors: (
     "contrast": rgb(255, 187, 0),
